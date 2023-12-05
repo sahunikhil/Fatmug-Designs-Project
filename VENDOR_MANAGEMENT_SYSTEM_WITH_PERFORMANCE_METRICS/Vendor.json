@@ -1,0 +1,142 @@
+[
+{
+    "model": "vms_pm.vendor",
+    "pk": 1,
+    "fields": {
+        "name": "Ram",
+        "contact_details": "",
+        "address": "",
+        "vendor_code": "V1YCT9",
+        "on_time_delivery_rate": 100.0,
+        "quality_rating_avg": 4.0,
+        "average_response_time": 88455.46849,
+        "fulfillment_rate": 100.0
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 2,
+    "fields": {
+        "name": "Jane Smith",
+        "contact_details": "789 Elm Rd, Village",
+        "address": "101 Pine Blvd, Hamlet",
+        "vendor_code": "V2ABC8",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 3,
+    "fields": {
+        "name": "Bob Johnson",
+        "contact_details": "555 Birch Ln, County",
+        "address": "999 Cedar Dr, Township",
+        "vendor_code": "V3XYZ7",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 4,
+    "fields": {
+        "name": "Alice Brown",
+        "contact_details": "222 Maple Ave, District",
+        "address": "777 Walnut St, Borough",
+        "vendor_code": "V4PQR6",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 5,
+    "fields": {
+        "name": "Eve Wilson",
+        "contact_details": "888 Oak Ave, City",
+        "address": "444 Elm St, Town",
+        "vendor_code": "V5LMN5",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 6,
+    "fields": {
+        "name": "Charlie Davis",
+        "contact_details": "333 Pine Blvd, Village",
+        "address": "666 Cedar Dr, Hamlet",
+        "vendor_code": "V6JKL4",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 7,
+    "fields": {
+        "name": "Grace Miller",
+        "contact_details": "777 Birch Ln, County",
+        "address": "111 Walnut St, Township",
+        "vendor_code": "V7DEF3",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 8,
+    "fields": {
+        "name": "David Wilson",
+        "contact_details": "999 Maple Ave, District",
+        "address": "222 Cedar Dr, Borough",
+        "vendor_code": "V8GHI2",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 9,
+    "fields": {
+        "name": "Sophia Taylor",
+        "contact_details": "444 Oak Ave, City",
+        "address": "888 Elm St, Town",
+        "vendor_code": "V9STU1",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+},
+{
+    "model": "vms_pm.vendor",
+    "pk": 10,
+    "fields": {
+        "name": "Mason Harris",
+        "contact_details": "666 Pine Blvd, Village",
+        "address": "333 Cedar Dr, Hamlet",
+        "vendor_code": "V10WXY0",
+        "on_time_delivery_rate": null,
+        "quality_rating_avg": null,
+        "average_response_time": null,
+        "fulfillment_rate": null
+    }
+}
+]
