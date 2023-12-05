@@ -20,6 +20,8 @@ from rest_framework import routers
 
 from vms_pm import views
 
+from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
+
 
 router = routers.DefaultRouter()
 router.register(r'vendors', views.VendorViewSet)
@@ -34,4 +36,15 @@ urlpatterns = [
     path('api/purchase_orders/<int:pk>/acknowledge/', views.PurchaseOrderViewSet.as_view(
         {'patch': 'acknowledge_purchase_order'}), name='acknowledge_purchase_order'),
     path('api/auth/', include('knox.urls')),
+]
+
+
+urlpatterns += [
+    # YOUR PATTERNS
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    # Optional UI:
+    path('api/schema/swagger-ui/',
+         SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    path('api/schema/redoc/',
+         SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 ]

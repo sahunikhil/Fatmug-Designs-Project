@@ -14,10 +14,22 @@ from datetime import datetime
 
 
 def generate_vendor_code():
+    """
+    Generates a vendor code.
+
+    Returns:
+        str: The generated vendor code.
+    """
     return 'V' + ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(5))
 
 
 def generate_po_number():
+    """
+    Generate a purchase order number.
+
+    Returns:
+        str: The generated purchase order number.
+    """
     return 'PO' + datetime.now().strftime('%Y%m%d%H%M%S') + '-' + ''.join(random.choice(string.digits) for _ in range(5))
 
 

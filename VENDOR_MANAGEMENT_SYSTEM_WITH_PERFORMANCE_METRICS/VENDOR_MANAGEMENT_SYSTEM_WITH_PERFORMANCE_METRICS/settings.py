@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'knox',
     'fieldsignals',
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -130,4 +131,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 'PAGE_SIZE': 10,
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Vendor Management System with Performance Metrics',
+    'DESCRIPTION': """Develop a Vendor Management System using Django and Django REST Framework. This
+        system will handle vendor profiles, track purchase orders, and calculate vendor performance
+        metrics.""",
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
 }
