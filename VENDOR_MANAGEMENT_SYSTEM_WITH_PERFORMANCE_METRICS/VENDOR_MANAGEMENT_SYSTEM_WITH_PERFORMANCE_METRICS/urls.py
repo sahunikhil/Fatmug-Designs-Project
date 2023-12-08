@@ -26,8 +26,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, Spec
 router = routers.DefaultRouter()
 router.register(r'vendors', views.VendorViewSet)
 router.register(r'purchase_orders', views.PurchaseOrderViewSet)
-router.register(r'vendors/(?P<vendor_id>\d+)/performance',
-                views.HistoricalPerformanceViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,8 +35,9 @@ urlpatterns = [
     path('api/purchase_orders/<int:pk>/acknowledge/', views.PurchaseOrderViewSet.as_view(
         {'patch': 'acknowledge_purchase_order'}), name='acknowledge_purchase_order'),
     path('api/auth/', include('knox.urls')),
+    path('api/vendors/<int:vendor_id>/performance',
+         views.HistoricalPerformanceDetailView.as_view(), name='historicalperformance-detail'),
 ]
-
 
 urlpatterns += [
     # YOUR PATTERNS
